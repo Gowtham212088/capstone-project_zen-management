@@ -1,38 +1,314 @@
-.App {
-  text-align: center;
+/* .App{
+  margin: 0;
+  padding: 0;
+}   */
+
+li {
+  list-style-type: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/** Student login page  */
+
+.entire-page {
+  height: 1000px;
+  background-image: url("https://img.freepik.com/free-vector/online-tutorials-concept_52683-37481.jpg?t=st=1652151404~exp=1652152004~hmac=97f2bf2b2aea2d2797fab214649002a147ef51356e10ee6d9af752be6e08f5bf&w=1380");
+  /* border: 0px;
+  margin: 0px; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.page-height {
+  height: 1000px;
+  /* margin-bottom:0px ; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.page-1 {
+  height: 950px;
+
+  background-color: rgba(255, 255, 255, 0.826);
+  background-attachment: fixed;
+}
+
+#icon {
+  color: rgb(11, 11, 16);
+  border: 5px solid rgb(11, 11, 16);
+}
+
+.login-box {
+  height: 700px;
+}
+
+.signin-text-field {
+  height: 250px;
+  width: 350px;
+}
+
+.signup-text-field {
+  height: 250px;
+  width: 400px;
+  position: relative;
+  top: 155px;
+}
+
+.page-2 {
+  background-color: rgba(255, 255, 255, 0.826);
+  height: 950px;
+  background-image: url("https://img.freepik.com/free-vector/online-class-illustration_52683-42415.jpg?t=st=1652160293~exp=1652160893~hmac=337ed5d5b00441597ab198bf8977a6baf606bacb16707b23428941a3cfdddc5d&w=826");
+}
+
+/** Admin login page  */
+
+.admin-entire-page {
+  height: 1000px;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* border: 0px;
+  margin: 0px; */
+}
+
+.admin-page-height {
+  height: 1000px;
+  /* margin-bottom:0px ; */
+}
+
+.admin-page-1 {
+  height: 950px;
+  background-image: url("https://img.freepik.com/free-vector/man-look-graphic-chart-business-analytics-concept-big-data-processing-icon_39422-761.jpg?t=st=1652191335~exp=1652191935~hmac=66da5d85d699adee5005d9d141af1d3fcfc5dd536174d2bf51ee31579e359144&w=1060");
+  background-color: rgba(255, 255, 255, 0.643);
+  background-attachment: scroll;
+}
+
+.fa {
+  color: rgb(244, 244, 244);
+  border: 5px solid rgb(203, 203, 203);
+}
+
+.admin-login-box {
+  height: 700px;
+}
+
+.admin-text-field {
+  height: 250px;
+  width: 350px;
+}
+
+.signup-admin-text-field {
+  height: 250px;
+  width: 350px;
+  position: relative;
+  bottom: 60px;
+}
+
+.admin-page-2 {
+  height: 950px;
+  background-image: url("https://img.freepik.com/free-vector/social-media-data-center-smm-stats-digital-marketing-research-market-trends-analysis-female-expert-studying-online-survey-results_335657-2392.jpg?t=st=1652157218~exp=1652157818~hmac=1e16748338685a1752b0d60f0135f601e61982ec10597717ba24ecfc0ff56b05&w=826");
+}
+
+.admin-login-background {
+  background-color: rgba(240, 248, 255, 0.326);
+}
+
+.admin-login-icon {
+  color: black;
+}
+
+/** Mentor login page  */
+
+.mentor-entire-page {
+  height: 1000px;
+  background-image: url("https://img.freepik.com/free-vector/teacher-standing-near-blackboard-holding-stick-isolated-flat-vector-illustration-cartoon-woman-character-near-chalkboard-pointing-alphabet_74855-8600.jpg?t=st=1652185916~exp=1652186516~hmac=8344ff608bc320ba048f855ff38267cce618a6b655ab792fd785a17728a350e9&w=1380");
+  /* border: 0px;
+  margin: 0px; */
+}
+
+.mentor-page-height {
+  height: 1000px;
+  /* margin-bottom:0px ; */
+}
+
+.mentor-page-1 {
+  height: 950px;
+
+  background-color: rgba(255, 255, 255, 0.826);
+  background-attachment: fixed;
+}
+
+#icon {
+  color: rgb(11, 11, 16);
+  border: 5px solid rgb(11, 11, 16);
+}
+
+.mentor-login-box {
+  height: 700px;
+}
+
+.mentor-signin-text-field {
+  height: 250px;
+  width: 360px;
+}
+
+.mentor-signup-text-field {
+  height: 250px;
+  width: 450px;
+  position: relative;
+  top: 155px;
+  color: rgb(232, 0, 0);
+}
+
+.mentor-page-2 {
+  background-color: rgba(255, 255, 255, 0.826);
+  height: 950px;
+  background-image: url("https://img.freepik.com/free-vector/inspiration-ideas-mentorship-coaching-motivate-guidance-business-solution-creativity-innovation-help-grow-business-concept-businessman-manager-turn-lightbulb-valve-provide-ideas_212586-1194.jpg?w=1380");
+}
+
+/** Navbar stuffs  */
+
+#nav-img {
+  width: fit-content;
+  height: 45px;
+  width: 50px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.nav_bg {
+  background-color: rgb(86, 0, 185);
+}
+
+.txt-clr {
+  color: whitesmoke;
+}
+
+.fa-tog {
+  position: relative;
+  bottom: 5px;
+  right: 2px;
+  border: none;
+}
+
+/** Carosel items */
+
+.carosel-height {
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.carosel-height1 {
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.carosel-height2 {
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/** Admin Dashboard  */
+
+.dash-activity {
+  border-left: 10px solid #0d6efd;
+  background-color: rgb(255, 250, 180);
+  border-radius: 5px;
+  width: 350px;
+}
+
+.dash-activity1 {
+  border-left: 10px solid #198754;
+  background-color: rgb(255, 250, 180);
+  border-radius: 5px;
+  width: 350px;
+}
+
+.dash-activity2 {
+  border-left: 10px solid #0ccaf0;
+  background-color: rgb(255, 250, 180);
+  border-radius: 5px;
+  width: 350px;
+}
+
+.dash-activity3 {
+  border-left: 10px solid #ffc107;
+  background-color: rgb(255, 250, 180);
+  border-radius: 5px;
+  width: 350px;
+}
+
+/** Doughnut */
+
+.chart {
+  width: 500px;
+  
+}
+
+
+.chart-parent{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: center; 
 }
 
-.App-link {
-  color: #61dafb;
+/** Bootstrap Cards  */
+
+.card-bg{
+  background-color: rgba(245, 245, 220, 0.316);
+  /* height: 250px; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.card1-bg{
+  
+  background-color: rgba(245, 245, 220, 0.336);
+}
+
+.card2-bg{
+   background-color: rgba(245, 245, 220, 0.336);
+   
+}
+
+
+/** Bar Chart  */
+
+.line-chart-parent{
+width: 1000px;
+}
+
+/** media query  */
+
+@media only screen and (max-width: 570px) {
+  .first-card {
+  margin-left: 28px;
   }
 }
+
+
+@media only screen and (max-width: 570px) {
+.second-card {
+margin-right: 95px;
+}
+}
+
+@media only screen and (max-width: 570px) {
+  .ticket-box {
+  margin-right: 25px;
+  }
+  }
+
+  @media only screen and (max-width: 570px) {
+    .third-card{
+      margin-right: 55px;
+    }
+    }
+
+    @media only screen and (max-width: 570px) {
+      .forth-card{
+        margin-right: 200px;
+       
+      }
+      }
+
+ 
+  
+  
+  
