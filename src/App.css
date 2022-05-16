@@ -308,7 +308,39 @@ margin-right: 95px;
       }
       }
 
+      /** Class element card */
  
+  .card-bdy{
+    background-color: #923cb5;
+    background-image: linear-gradient(147deg, #923cb5 0%, #000000 74%);
+
+  }
+
+/** Queries Chat Box  */
+  /* .chat:nth-child(odd){
+     background-color: #923cb5;
+  }
   
-  
-  
+  .chat:nth-child(even){
+    background-color: yellowgreen;
+ } */
+ /* .chat{
+   border-radius: 5px;
+   padding: 5px;
+   margin-top:20px;
+   object-fit: contain;
+ }
+
+ .col_1{
+   border: 2px solid red;
+ } */
+
+ #standard-basic::placeholder{
+  text-align: center;
+
+ }
+
+ li,a{
+  text-decoration:none;
+ }
+ 

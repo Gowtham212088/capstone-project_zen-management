@@ -24,6 +24,9 @@ function DashBoard() {
            <h3> Elegablity : True </h3>
           </div>
         </div>
+
+{/* Doughnut chart Card */}
+
         <div className="row d-flex justify-content-center align-items-center flex-wrap first-card">
           <div className="col-xs-4-ms-5 col-sm-4 col-md-4 col-lg-4 me-5 ">
             <div className="card row-4">
@@ -35,6 +38,8 @@ function DashBoard() {
               </div>
             </div>
           </div>
+          
+{/* BarChart Card */}
 
           <div className="col-xs-7 col-sm-7 col-md-7 col-lg-7 ms-5 second-card">
             <div className="card">
@@ -50,6 +55,8 @@ function DashBoard() {
           </div>
           <div className="row d-flex mt-4 justify-content-between align-items-center flex-wrap third-card">
           
+{/* Radar chart card */}
+
           <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5 me-5 ps-5 mt-6">
             <div className="card row-4">
               <h5 className="card-header">Codekata</h5>
@@ -60,7 +67,9 @@ function DashBoard() {
               </div>
             </div>
           </div>
-          
+
+          {/* Line chart card */}
+
           <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 ms-5 forth-card">
             <div className="card">
               <h5 className="card-header">Micro Arc</h5>

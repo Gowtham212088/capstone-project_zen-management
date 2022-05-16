@@ -1,5 +1,5 @@
 import React from "react";
-
+import {Link} from "react-router-dom";
 function Navbar() {
   return (
     <div>
@@ -22,13 +22,14 @@ function Navbar() {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
+            
+              <li className="nav-item fs-4 text txt-clr ms-5">
                 <a
-                  className="nav-link active fs-4 text txt-clr ms-5"
+                  className="nav-link active "
                   aria-current="page"
-                  href="#"
+                 
                 >
-                  Class
+                <Link to="/class">  Class </Link>
                 </a>
               </li>
 
@@ -38,7 +39,7 @@ function Navbar() {
                   aria-current="page"
                   href="#"
                 >
-                  Dashboard
+                <Link to="/dashboard">  Dashboard </Link>
                 </a>
               </li>
 
@@ -48,7 +49,17 @@ function Navbar() {
                   aria-current="page"
                   href="#"
                 >
-                  Tasks
+               <Link to="/tasks">  Tasks </Link>
+                </a>
+              </li>
+
+            <li className="nav-item">
+                <a
+                  className="nav-link active fs-4 text txt-clr ms-5"
+                  aria-current="page"
+                  href="#"
+                >
+               <Link to="/roadmap">   Road Map </Link>
                 </a>
               </li>
 
@@ -58,7 +69,7 @@ function Navbar() {
                   aria-current="page"
                   href="#"
                 >
-                  Queries
+                <Link to="/queries">  Queries </Link>
                 </a>
               </li>
             </ul>
