@@ -24,7 +24,7 @@ export function RmbSub({numb}) {
   return (
      
     <div className="d-flex flex-column" style={{backgroundColor:"#333333"}}>
-      <IconButton style={{backgroundColor:"#333333",color:"#ffffff",paddingTop:"15px"}}> {numb} </IconButton>
+      <IconButton style={{backgroundColor:"#333333",color:"#ffffff",paddingTop:"15px",border:"none"}}> {numb} </IconButton>
   
   
     </div>
