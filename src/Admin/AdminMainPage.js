@@ -6,10 +6,10 @@ import TextField from '@mui/material/TextField';
 import CreateStudent from "./CreateStudent";
 function AdminMainPage() {
   return (
-    <div className="page">
-      <div class="card">
-        <div>
-          <nav className="navbar navbar-expand-lg text-info nav_bg_admin ">
+    <div className="page container-fluid">
+     
+        <div className="row">
+          <nav className="navbar navbar-expand-lg col-12 text-info nav_bg_admin">
             <div className="container-fluid pt-2 pb-2">
               <i className="fa fa-4x fa-free-code-camp text-danger" aria-hidden="true">
                 {" "}
@@ -59,7 +59,7 @@ function AdminMainPage() {
                       aria-current="page"
                       href="#"
                     >
-                      <Link to="/getMentor"> Mentor Details </Link>
+                      <Link to="/getMentor"> Mentors </Link>
                     </a>
                   </li>
 
@@ -69,7 +69,7 @@ function AdminMainPage() {
                       aria-current="page"
                       href="#"
                     >
-                      <Link to="/getStudents"> Students Details </Link>
+                      <Link to="/getStudents"> Students </Link>
                     </a>
                   </li>
 
@@ -129,9 +129,9 @@ function AdminMainPage() {
        
 
 
-      </div>
+      
     </div>
-  );
+   );
 }
 
 export default AdminMainPage;

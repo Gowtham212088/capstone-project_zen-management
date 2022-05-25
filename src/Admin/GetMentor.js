@@ -25,7 +25,7 @@ useEffect(() => getMentors(), [])
         <div class="card border-3 mentor-list mb-5">
     
       <div class="card-body">
-        <h1 class="card-title text-center text-light"> Mentor List</h1>
+        <h1 class="card-title text-center text-light"> Mentors List</h1>
        </div>
     </div>
           {mentor.map(({mentor_id,profile_pic,name,email}) => (

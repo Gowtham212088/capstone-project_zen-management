@@ -174,8 +174,8 @@ useEffect(()=>getStudents(),[])
       <div class="card-body">
         <h1 class="card-title text-center text-dark"> Students List</h1>
        </div>
-     <table class="table table-dark table-striped">
-  <thead>
+     <table class="table table-dark  table-responsive">
+  <thead className="table-responsive">
     <tr>
       <th scope="col"> Sl.No </th>
       <th scope="col">Students ID</th>

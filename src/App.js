@@ -29,11 +29,11 @@ function App() {
 <AdminMainPage/> 
 <Switch>
 <Route path="/addMentor">
-         <CreateMentors/>
+         <CreateMentors/> 
  </Route>
 
  <Route path="/addStudent">
-         <CreateStudent/>
+        <CreateStudent/>       
  </Route>
 
  <Route path="/getStudents">
