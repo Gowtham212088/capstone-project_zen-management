@@ -192,8 +192,11 @@ useEffect(()=>getStudents(),[])
       <td> {zen_id} </td>
       <td> {name} </td>
       <td> {email} </td>
-      <td> <IconButton aria-label="delete" size="large"> <EditIcon style={{color:"#0d6efd"}} fontSize="inherit"/> </IconButton> </td>
-      <td> <IconButton aria-label="delete" onClick={()=>delStudent(id)} size="large">
+      <td> <IconButton onClick={()=>history.push(`/Student/edit/${id}`)} aria-label="delete" size="large"> <EditIcon style={{color:"#0d6efd"}} fontSize="inherit" /> </IconButton> </td>
+      <td> <IconButton aria-label="delete" onClick={()=>delStudent(id).then(()=>window.location.reload(false))
+            
+            
+      } size="large">
   <DeleteIcon  style={{color:"red"}} fontSize="inherit" />
 </IconButton> </td>
     </tr>

@@ -6,7 +6,7 @@ import { useHistory } from "react-router-dom";
 
 const styles ={width:"575px"}
 
-const [Gid,setGid]= useState("")
+const [zen_id,setzen_id]= useState("")
 const [name,setName]=useState("")
 const [email,setEmail]=useState("")
 const [image,setImage]=useState("")
@@ -18,7 +18,7 @@ const history = useHistory()
                                 <h1 className="text-center text-light"> Create Student </h1>
             <div className="row justify-content-center mt-5 ">
                 <div className="col-7 d-flex flex-column mt-5 text-light">
-                <TextField type="" id="standard-basic" error label="Student-ID" className="mb-5" variant="outlined"  onChange={(event)=>setGid(event.target.value)}/>
+                <TextField type="" id="standard-basic" error label="Student-ID" className="mb-5" variant="outlined"  onChange={(event)=>setzen_id(event.target.value)}/>
 
                 <TextField type="text" id="standard-basic" error secondary label="Name" className="mb-5" variant="outlined" onChange={(event)=>setName(event.target.value)} />
 
@@ -31,7 +31,7 @@ const history = useHistory()
                     <Button className="mt-3 mb-5"  variant="outlined" color="error" 
                     onClick={()=>{
                         const newStudent = {
-                            Gid:Gid,
+                            zen_id:zen_id,
                             name:name,
                             email:email,
                             image:image,

@@ -9,7 +9,7 @@ function AdminMainPage() {
     <div className="page container-fluid">
      
         <div className="row">
-          <nav className="navbar navbar-expand-lg col-12 text-info nav_bg_admin">
+          <nav className="navbar navbar-expand-lg col-sm-12 col-md-12 col-lg-12 text-info nav_bg_admin">
             <div className="container-fluid pt-2 pb-2">
               <i className="fa fa-4x fa-free-code-camp text-danger" aria-hidden="true">
                 {" "}

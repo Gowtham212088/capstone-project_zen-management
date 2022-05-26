@@ -21,13 +21,20 @@ import CreateMentors from "./Admin/CreateMentors";
 import MainGetStudent from "./Admin/GetStudents";
 import GetMentorMain from "./Admin/GetMentor";
 import AdminDashBoard from "./Admin/AdminDashBoard";
+import EditStudents from "./Admin/EditStudents";
 function App() {
   return (
     <div className="App">
 
 
-<AdminMainPage/> 
+<AdminMainPage/>
+
 <Switch>
+
+<Route exact path="/Student/edit/:id">
+<EditStudents/>
+</Route>
+
 <Route path="/addMentor">
          <CreateMentors/> 
  </Route>
