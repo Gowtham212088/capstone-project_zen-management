@@ -36,7 +36,8 @@ return(
           <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
             <li className="nav-item fs-4 text txt-clr ms-5">
               <a className="nav-link active " aria-current="page">
-                <Link to="/adminLogin"> Admin Login </Link>
+                <Link to="/adminLogin"> <i class="fa fa-cog text-danger" aria-hidden="true"> Admin Login </i>
+   </Link>
               </a>
             </li>
 
@@ -46,7 +47,8 @@ return(
                 aria-current="page"
                 href="#"
               >
-                <Link to="/mentorLogin"> Mentor Login </Link>
+                <Link to="/mentorLogin"> <i class="fa fa-user-circle text-dark" aria-hidden="true"> Mentor Login </i>
+   </Link>
               </a>
             </li>
 
@@ -56,7 +58,8 @@ return(
                 aria-current="page"
                 href="#"
               >
-                <Link to="/studentLogin"> Students Login </Link>
+                <Link to="/studentLogin"> <i class="fa fa-book text-dark" aria-hidden="true">  Students Login </i>
+ </Link>
               </a>
             </li>
           </ul>
