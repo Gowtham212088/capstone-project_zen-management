@@ -7,7 +7,7 @@ function StudentsLogin() {
       <div className="row page-height ">
         {/* Page 1   */}
         <div className="col-lg-6 page-1">
-          <i class="fa fa-4x fa-free-code-camp" id="icon" aria-hidden="true">
+          <i className="fa fa-4x fa-free-code-camp" id="icon" aria-hidden="true">
             {" "}
             Zen class{" "}
           </i>

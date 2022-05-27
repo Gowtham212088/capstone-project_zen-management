@@ -64,10 +64,10 @@ function StudentsMain() {
   return (
       <div className="container-fluid alert students-main">
     <div className="row d-flex justify-content-center">
-    <div class="card border-3 student-list mb-5">
+    <div className="card border-3 student-list mb-5">
 
-  <div class="card-body">
-    <h1 class="card-title text-center text-light"> Students List</h1>
+  <div className="card-body">
+    <h1 className="card-title text-center text-light"> Students List</h1>
    </div>
 </div>
       {data.map((element) => (
@@ -86,9 +86,9 @@ function StudentsMain() {
 function Students({name,Qualification,email,profile_pic}) {
   return (
     <div className="col-sm-5 col-md-5 col-lg-5 ">
-           <div class="card each-card">
+           <div className="card each-card">
   
-  <div class="card-body row d-flux justify-content-between">
+  <div className="card-body row d-flux justify-content-between">
     <div className="col-sm-4 col-md-4 col-lg-4">
         <img className="img-card img-fluid" src={profile_pic}/>
          </div>

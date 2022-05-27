@@ -8,7 +8,7 @@ import Button from '@mui/material/Button';
 function Queries() {
   return (
     <div>
-      <div class="card">
+      <div className="card">
         <div className="card-body bg-warning">
           <h1 className="card-title"> Queries </h1>
         </div>
@@ -17,11 +17,11 @@ function Queries() {
         <div className="container">
           <div className="row mt-2">
               <div className="col">
-              <div class="card">
+              <div className="card">
 
 {/* Card */}
 
-  <div class="card-header text-center fs-2 fw-bold text-muted">
+  <div className="card-header text-center fs-2 fw-bold text-muted">
     Featured 
   </ div>
   <div className="card-body ">

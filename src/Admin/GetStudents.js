@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import IconButton from "@mui/material/IconButton";
-import EditIcon from '@mui/icons-material/Edit';
+import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
 import { useEffect } from "react";
-import {useHistory} from "react-router-dom"
+import { useHistory } from "react-router-dom";
+import TextField from "@mui/material/TextField";
 function MainGetStudent() {
   // const students = [
   //   {
@@ -147,65 +148,94 @@ function MainGetStudent() {
   //   },
   // ];
 
-  const history = useHistory()
+  const history = useHistory();
   const delApi = "https://6228d2bb9fd6174ca8308614.mockapi.io/students";
-  
-       const delStudent = (id)=>{
-         fetch(`${delApi}/${id}`,{
-           method:"DELETE"
-         }).then(()=>history.push("/getStudents"))
-         
-       }
 
-const [student,setStudents]=useState([])
+  const delStudent = (id) => {
+    fetch(`${delApi}/${id}`, {
+      method: "DELETE",
+    }).then(() => history.push("/getStudents"));
+  };
 
-const getStudents = (()=>{
-  fetch("https://6228d2bb9fd6174ca8308614.mockapi.io/students",{
-    
-    method:"GET"
-  }).then((data)=>data.json())
-    .then((response)=>setStudents(response))
-})
-console.log(student);
-useEffect(()=>getStudents(),[])
+  const [student, setStudents] = useState([]);
+  const [query, setQuery] = useState("");
+  const getStudents = () => {
+    fetch("https://6228d2bb9fd6174ca8308614.mockapi.io/students", {
+      method: "GET",
+    })
+      .then((data) => data.json())
+      .then((response) => setStudents(response));
+  };
+  console.log(student);
+  useEffect(() => getStudents(), []);
 
   return (
     <div>
-      <div class="card-body">
-        <h1 class="card-title text-center text-dark"> Students List</h1>
-       </div>
-     <table class="table table-dark  table-responsive">
-  <thead className="table-responsive">
-    <tr>
-      <th scope="col"> Sl.No </th>
-      <th scope="col">Students ID</th>
-      <th scope="col">Name</th>
-      <th scope="col">Email</th>
-      <th scope="col"> Edit </th>
-      <th scope="col">Delete</th>
-    </tr>
-  </thead>
-  <tbody>
-    {student.map(({id,zen_id,name,email})=>(
- <tr>
-      <th scope="row"> {id} </th>
-      <td> {zen_id} </td>
-      <td> {name} </td>
-      <td> {email} </td>
-      <td> <IconButton onClick={()=>history.push(`/Student/edit/${id}`)} aria-label="delete" size="large"> <EditIcon style={{color:"#0d6efd"}} fontSize="inherit" /> </IconButton> </td>
-      <td> <IconButton aria-label="delete" onClick={()=>delStudent(id).then(()=>window.location.reload(false))
-            
-            
-      } size="large">
-  <DeleteIcon  style={{color:"red"}} fontSize="inherit" />
-</IconButton> </td>
-    </tr>
-     ))}
-  </tbody>
-</table>
- 
+      <div class="card-body d-flex justify-content-between">
+        <h1 class="card-title text-left text-dark"> Students List</h1>
+        <i
+          className="fa fa-4x fa-free-code-camp text-danger"
+          aria-hidden="true"
+        >
+          {" "}
+          Zen Students List{" "}
+        </i>
+        <TextField
+          label="Search Name"
+          onChange={(event) => setQuery(event.target.value)}
+        />
       </div>
-  
+      <table class="table table-dark  table-responsive">
+        <thead className="table-responsive">
+          <tr>
+            <th scope="col"> Sl.No </th>
+            <th scope="col">Students ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col"> Edit </th>
+            <th scope="col">Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          {student
+            .filter((filt) => filt.name.toLowerCase().includes(query))
+            .map(({ id, zen_id, name, email }) => (
+              <tr>
+                <th scope="row"> {id} </th>
+                <td> {zen_id} </td>
+                <td> {name} </td>
+                <td> {email} </td>
+                <td>
+                  {" "}
+                  <IconButton
+                    onClick={() => history.push(`/Student/edit/${id}`)}
+                    aria-label="delete"
+                    size="large"
+                  >
+                    {" "}
+                    <EditIcon
+                      style={{ color: "#0d6efd" }}
+                      fontSize="inherit"
+                    />
+                  </IconButton>
+                </td>
+                <td>
+                 
+                  <IconButton
+                    aria-label="delete"
+                    onClick={() =>
+                      delStudent(id).then(() => window.location.reload(false))
+                    }
+                    size="large"
+                  >
+                    <DeleteIcon style={{ color: "red" }} fontSize="inherit" />
+                  </IconButton>
+                </td>
+              </tr>
+            ))}
+        </tbody>
+      </table>
+    </div>
   );
 }
 

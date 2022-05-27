@@ -26,7 +26,7 @@ import {Link} from "react-router-dom";
         
             </ul>
 
-            <div classNameName="d-flex ">
+            <div className="d-flex ">
               <li className="nav-item dropdown">
                 <a
                   className="nav-link "
@@ -36,12 +36,12 @@ import {Link} from "react-router-dom";
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  <span classNameName="fs-5 text">
+                  <span className="fs-5 text">
                     {" "}
                     <b> MENTOR NAME </b>{" "}
                      <img
                      width="25px"
-                    classNameName="mx-2 img-fluid"
+                    className="mx-2 img-fluid"
                     id="nav-img"
                     src="https://img.freepik.com/free-vector/webinar-concept-illustration_114360-4764.jpg?t=st=1652792505~exp=1652793105~hmac=aa89b1f5ff3909f30d2348832137bcfcc24c4f146ccbcae50bb3d14edbf09be7&w=1380"
                   />
@@ -67,10 +67,10 @@ import {Link} from "react-router-dom";
       </nav>
 
 <div className="">
-<div class="card">
+<div className="card">
 
-  <div class="card-body">
-    <h2 class="card-title text-center text-primary fs-1 mentor-portal"> Mentor Portal </h2>
+  <div className="card-body">
+    <h2 className="card-title text-center text-primary fs-1 mentor-portal"> Mentor Portal </h2>
   </div>
 </div>
 </div>

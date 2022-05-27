@@ -8,10 +8,7 @@ function AdminLogin() {
       <div className="row admin-page-height ">
         {/* Page 1   */}
         <div className="col-lg-7 admin-page-1">
-          <i class="fa fa-4x fa-free-code-camp " aria-hidden="true">
-            {" "}
-            Zen class{" "}
-          </i>
+         
 
           {/* LOGIN BOX */}
 
@@ -88,13 +85,6 @@ function AdminLogin() {
                   color="error"
                 />
 
-                <TextField
-                style={{marginTop:"20px"}}
-                  id="outlined-basic"
-                  label="Re-enter Password"
-                  variant="filled"
-                  color="error"
-                />
 
                 <Button
                   variant="contained"
