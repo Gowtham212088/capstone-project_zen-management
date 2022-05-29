@@ -1,9 +1,9 @@
 import React from "react";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
-
+import {useHistory} from "react-router-dom"
 function MentorLogin(){
-
+const history = useHistory()
 return(
     <div className="container-fluid mentor-entire-page">
     <div className="row mentor-page-height ">
@@ -36,7 +36,7 @@ return(
                 variant="filled"
               />
 
-              <Button  variant="contained" style={{ height: "45px",backgroundColor:"rgb(85, 0, 255)"  }}>
+              <Button onClick={()=>history.push("/asigenTask")}  variant="contained" style={{ height: "45px",backgroundColor:"rgb(85, 0, 255)"  }}>
                 {" "}
                 Sign In{" "}
               </Button>
@@ -95,7 +95,7 @@ return(
                 variant="filled"
               />
 
-          <Button variant="contained" style={{ height: "45px",marginTop:"20px",backgroundColor:"rgb(85, 0, 255)" }}>
+          <Button  variant="contained" style={{ height: "45px",marginTop:"20px",backgroundColor:"rgb(85, 0, 255)" }}>
             {" "}
             Sign Up{" "}
           </Button>

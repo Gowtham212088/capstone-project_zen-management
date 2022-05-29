@@ -1,8 +1,12 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
-
+import AdminDashBoard from "../Admin/AdminDashBoard";
 function AdminLogin() {
+
+const history = useHistory()
+
   return (
     <div className="container-fluid admin-entire-page">
       <div className="row admin-page-height ">
@@ -34,6 +38,7 @@ function AdminLogin() {
                 />
 
                 <Button
+                onClick={()=>history.push("/adminMainPage")}
                   variant="contained"
                   style={{ height: "41px", color: "black", background: "red" }}
                 >
@@ -98,7 +103,10 @@ function AdminLogin() {
           </div>
         </div>
       </div>
+
     </div>
+
+
   );
 }
 

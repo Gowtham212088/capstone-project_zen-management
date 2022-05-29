@@ -4,6 +4,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import TextField from '@mui/material/TextField';
 import CreateStudent from "./CreateStudent";
+import AdminDashBoard from "./AdminDashBoard";
 function AdminMainPage() {
   return (
     <div className="page container-fluid">
@@ -73,15 +74,7 @@ function AdminMainPage() {
                     </a>
                   </li>
 
-                  <li className="nav-item">
-                    <a
-                      className="nav-link active fs-4 text txt-clr ms-5"
-                      aria-current="page"
-                      href="#"
-                    >
-                      <Link to="/dashboard"> Dashboard </Link>
-                    </a>
-                  </li>
+                
                 </ul>
 
                 <div className="d-flex ">
@@ -126,7 +119,7 @@ function AdminMainPage() {
           </nav>
         </div>
 
-       
+        <AdminDashBoard/>
 
 
       

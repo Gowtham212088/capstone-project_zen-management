@@ -23,11 +23,12 @@ import GetMentorMain from "./Admin/GetMentor";
 import AdminDashBoard from "./Admin/AdminDashBoard";
 import EditStudents from "./Admin/EditStudents";
 import NavMain from "./Login Pages/MainPageNav";
-
+import MentorNavbar from "./MentorSide/MentorNavbar";
+import AsigenClassDetails from "./MentorSide/AsigenClassDetails";
 function App() {
   return (
     <div className="App">
-<NavMain/>
+
 
 <Switch>
 
@@ -43,15 +44,66 @@ function App() {
 <AdminLogin/>
 </Route>
 
+{/*  Complete admin Login */}
+
+{/* Contains navbar and Dashboard defaultly */}
+<Route path="/adminMainPage">
+  <AdminMainPage/>
+</Route>
+
+
+<Route path="/addMentor">
+  <CreateMentors/>
+</Route>
+
+<Route path="/addStudent">
+  <CreateStudent/>
+</Route>
+
+<Route path="/getMentor">
+  <GetMentorMain/>
+</Route>
+
+<Route path="/getStudents">
+  <MainGetStudent/>
+</Route>
+
+<Route path="/Student/edit/:id">
+  <EditStudents/>
+</Route>
+
+{/* Complete Mentor login  */}
+
 <Route path="/mentorLogin">
 <MentorLogin/>
 </Route>
 
-<Route path="/studentLogin">
+<Route path="/asigenTask">
+  <MentorNavbar/>
+  <AsigenTask/>
+  <AsigenClassDetails/>
+</Route>
+
+<Route path="/studentsMain">
+<StudentsMain/>
+</Route>
+
+<Route path="/studentsDetail">
+<StudentsDetail/>
+</Route>
+
+<Route path="">
+
+</Route>
+
+<Route >
 <StudentsLogin/>
 </Route>
 
+
+
 </Switch>
+
     </div>
   );
 }
