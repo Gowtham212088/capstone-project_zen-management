@@ -13,7 +13,7 @@ import Queries from "./Students Side/Queries";
 import { Switch, Route } from "react-router-dom";
 import StudentsMain from "./MentorSide/Students";
 import Mentor from "./MentorSide/Mentor";
-import StudentsDetail from "./MentorSide/StudentsDetail";
+import MentorDetail from "./MentorSide/MentorDetail";
 import AsigenTask from "./MentorSide/AsigenTask";
 import AdminMainPage from "./Admin/AdminMainPage";
 import CreateStudent from "./Admin/CreateStudent";
@@ -25,6 +25,9 @@ import EditStudents from "./Admin/EditStudents";
 import NavMain from "./Login Pages/MainPageNav";
 import MentorNavbar from "./MentorSide/MentorNavbar";
 import AsigenClassDetails from "./MentorSide/AsigenClassDetails";
+import QueriesMentor from "./MentorSide/Queries";
+import TaskValuation from "./MentorSide/TaskValuation";
+
 function App() {
   return (
     <div className="App">
@@ -81,6 +84,9 @@ function App() {
 <Route path="/asigenTask">
   <MentorNavbar/>
   <AsigenTask/>
+</Route>
+
+<Route path="/asignClassDetails">
   <AsigenClassDetails/>
 </Route>
 
@@ -89,11 +95,15 @@ function App() {
 </Route>
 
 <Route path="/studentsDetail">
-<StudentsDetail/>
+<MentorDetail/>
 </Route>
 
-<Route path="">
+<Route path="/taskValuation">
+<TaskValuation/>
+</Route>
 
+<Route path="/MentorQueries">
+<QueriesMentor/>
 </Route>
 
 <Route >

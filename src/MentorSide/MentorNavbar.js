@@ -39,7 +39,7 @@ import { Link } from "react-router-dom";
                   aria-current="page"
                   href="#"
                 >
-                <Link to="/studentsDetail"> Student Info  </Link>
+                <Link to="/studentsDetail"> Mentor Info  </Link>
                 </a>
               </li>
 
@@ -49,7 +49,7 @@ import { Link } from "react-router-dom";
                   aria-current="page"
                   href="#"
                 >
-               <Link to="/roadmap">   Road Map </Link>
+               <Link to="/asignClassDetails">   Schedule Class </Link>
                 </a>
               </li>
 
@@ -59,7 +59,17 @@ import { Link } from "react-router-dom";
                   aria-current="page"
                   href="#"
                 >
-                <Link to="/queries">  Queries </Link>
+                <Link to="/taskValuation"> Task Valuation  </Link>
+                </a>
+              </li>
+
+              <li className="nav-item">
+                <a
+                  className="nav-link active fs-4 text txt-clr ms-5"
+                  aria-current="page"
+                  href="#"
+                >
+                <Link to="/MentorQueries">  Queries </Link>
                 </a>
               </li>
             </ul>

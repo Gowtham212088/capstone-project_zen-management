@@ -1,15 +1,17 @@
 import React from "react";
+import Button from '@mui/material/Button';
 
-
-        const StudentsDetail = (()=>{
+        const MentorDetail = (()=>{
                 return(
                         <div>
+<div class="card bg-transparent mentor-info">
+        <div className="card-body text-left ">
+        <Button className="mb-5 text-warning"  color="warning" variant="outlined" > Home</Button>
+        <span className="fs-1 d-flex justify-content-around text-left  text-dark"> Mentor Information  </span>
+        </div>
+      </div> 
 
-<div className="card-body bg-primary text-center">
-           <h1 className="text-dark mt-2 mb-5 stu-bio"> Students Bio </h1>
-  </div> 
-
-                        <div className="container-fluid alert alert-primary profile-bg mt-5">
+    <div className="container-fluid alert alert-primary profile-bg mt-5">
                              <div className="row mb-4 ">
                                 <div className=" d-flex justify-content-center"> <img className="img-fluid img" src="https://avatars.githubusercontent.com/u/89139024?s=400&u=886fe46368580dc97f50f8e4d6170206d756e6b2&v=4"/> </div>
                                 <div className="  d-flex justify-content-center align-items-center"> <h1 className="text-light"> Gowtham Kumar V </h1> </div> 
@@ -45,4 +47,4 @@ import React from "react";
                 )
         })
 
-export default StudentsDetail;
+export default MentorDetail;

@@ -132,13 +132,17 @@ function StudentsMain() {
   ];
 
   return (
+    
       <div className="container-fluid alert students-main">
     <div className="row d-flex justify-content-center">
     <div className="card border-3 student-list mb-5">
 
-  <div className="card-body">
-    <h1 className="card-title text-center text-light"> Students List</h1>
-   </div>
+  <div class="card bg-transparent">
+        <div className="card-body text-left ">
+        <Button className="mb-5 text-warning"  color="warning" variant="outlined" > Home</Button>
+        <span className="fs-1 d-flex justify-content-around text-left asign-cd text-warning"> Students List  </span>
+        </div>
+      </div> 
 </div>
       {data.map((element) => (
         <Students
@@ -150,6 +154,7 @@ function StudentsMain() {
       ))}
     </div>
     </div>
+   
   );
 }
 

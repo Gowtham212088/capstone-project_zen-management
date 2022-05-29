@@ -6,9 +6,9 @@ import Button from "@mui/material/Button";
        return(
 <div>
         <div class="card">
-        <div class="card-body text-left">
-        <Button className="mb-5" variant="outlined"> Home</Button>
-        <span className="fs-1 d-flex justify-content-around text-left"> Create Task  </span>
+        <div class="card-body text-left ">
+        <Button className="mb-5" variant="outlined" > Home</Button>
+        <span className="fs-1 d-flex justify-content-around text-left asign-cd"> Asign Class Details  </span>
         </div>
       </div>
         
@@ -18,7 +18,7 @@ import Button from "@mui/material/Button";
           <div className="row d-flex justify-content-center align-items-center">
             <div className="col-7 d-flex justify-content-center flex-column align-items-center flex-colu  ">
     
-                               <h2 className="text-center text-primary"> Create Task </h2>
+                               <h2 className="text-center text-primary"> Asign Class Details</h2>
     
               
               <TextField
