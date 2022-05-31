@@ -68,7 +68,7 @@ function Class() {
         </div>
       </div>
 
-{/* Content Starts here */}
+      {/* Content Starts here */}
 
       <div className="row d-flex justify-content-center mt-4">
         <div className="col-11">
@@ -83,49 +83,98 @@ function Class() {
         </div>
       </div>
 
-{/* Task Card Starts Here Onwards */}
+      {/* Task Card Starts Here Onwards */}
 
-<div className="row mt-4">
-<div className="d-flex justify-content-center">
-      <div className="card col-11">
-  <h3 className="card-header text-primary"> Activities </h3>
-  <div className="card-body">
-    <h5 className="card-title">CRUD</h5>
-    <h4 className="card-text">Task - Implement CRUD operation with different UI of admin dashboard for Library mangement and use formik for all form validations</h4>
-   
-    <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"> Submit </button>
+      <div className="row mt-4">
+        <div className="d-flex justify-content-center">
+          <div className="card col-11">
+            <h3 className="card-header text-primary"> Activities </h3>
+            <div className="card-body">
+              <h5 className="card-title">CRUD</h5>
+              <h4 className="card-text">
+                Task - Implement CRUD operation with different UI of admin
+                dashboard for Library mangement and use formik for all form
+                validations
+              </h4>
 
-<div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div className="modal-dialog">
-    <div className="modal-content">
-      <div className="modal-header">
-        <h5 className="modal-title" id="exampleModalLabel">New message</h5>
-        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div className="modal-body">
-        <form>
-          <div className="mb-3">
-            <label for="recipient-name" className="col-form-label"> Front-End Sourcecode URL </label>
-            <input type="text" className="form-control" id="recipient-name"/>
+              <button
+                type="button"
+                className="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                data-bs-whatever="@getbootstrap"
+              >
+                {" "}
+                Submit{" "}
+              </button>
+
+              <div
+                className="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div className="modal-dialog">
+                  <div className="modal-content">
+                    <div className="modal-header">
+                      <h5 className="modal-title" id="exampleModalLabel">
+                        New message
+                      </h5>
+                      <button
+                        type="button"
+                        className="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div className="modal-body">
+                      <form>
+                        <div className="mb-3">
+                          <label
+                            for="recipient-name"
+                            className="col-form-label"
+                          >
+                            {" "}
+                            Front-End Sourcecode URL{" "}
+                          </label>
+                          <input
+                            type="text"
+                            className="form-control"
+                            id="recipient-name"
+                          />
+                        </div>
+                        <div className="mb-3">
+                          <label for="message-text" className="col-form-label">
+                            Back-End API
+                          </label>
+                          <input
+                            type="text"
+                            className="form-control"
+                            id="recipient-name"
+                          />
+                        </div>
+                      </form>
+                    </div>
+                    <div className="modal-footer">
+                      <button
+                        type="button"
+                        className="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" className="btn btn-primary">
+                        Submit Task
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="mb-3">
-            <label for="message-text" className="col-form-label">Back-End API</label>
-            <input type="text" className="form-control" id="recipient-name"/>
-          </div>
-        </form>
+        </div>
       </div>
-      <div className="modal-footer">
-        <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" className="btn btn-primary">Submit Task</button>
-      </div>
-    </div>
-  </div>
-</div>
-  </div>
-</div>
-</div>
-</div>
-
     </div>
   );
 }

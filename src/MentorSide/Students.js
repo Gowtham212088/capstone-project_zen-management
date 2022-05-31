@@ -2,8 +2,7 @@ import React from "react";
 import Button from "@mui/material/Button";
 import { useHistory } from "react-router-dom";
 function StudentsMain() {
-
-const history = useHistory()
+  const history = useHistory();
 
   const data = [
     {
@@ -161,7 +160,7 @@ const history = useHistory()
                 className="mb-5 text-warning"
                 color="warning"
                 variant="outlined"
-                onClick={()=>history.push("/asigenTask")}
+                onClick={() => history.push("/asigenTask")}
               >
                 {" "}
                 Home

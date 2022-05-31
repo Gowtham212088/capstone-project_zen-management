@@ -2,8 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 function MentorNavbar() {
-
-const history = useHistory()
+  const history = useHistory();
 
   return (
     <div>
@@ -34,7 +33,6 @@ const history = useHistory()
                   <Link to="/studentsMain"> Students </Link>
                 </a>
               </li>
-
 
               <li className="nav-item">
                 <a
@@ -88,12 +86,12 @@ const history = useHistory()
                   </span>
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li onClick={()=>history.push("/studentsDetail")}>
+                  <li onClick={() => history.push("/studentsDetail")}>
                     <a className="dropdown-item" href="#">
                       My profile
                     </a>
                   </li>
-                  <li onClick={()=>history.push("/mentorLogin")}>
+                  <li onClick={() => history.push("/mentorLogin")}>
                     <a className="dropdown-item" href="#">
                       Logout
                     </a>

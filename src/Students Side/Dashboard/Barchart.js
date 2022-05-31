@@ -11,7 +11,6 @@ import {
   Legend,
 } from "chart.js";
 
-
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -46,7 +45,7 @@ export const data = {
       borderWidth: 1,
       hoverBackgroundColor: "rgba(255,99,132,0.4)",
       hoverBorderColor: "rgba(255,99,132,1)",
-      data: [4,5,3,7,1,2,3]
+      data: [4, 5, 3, 7, 1, 2, 3],
     },
     {
       label: "Best Case",
@@ -55,7 +54,7 @@ export const data = {
       borderWidth: 1,
       hoverBackgroundColor: "rgba(255,99,132,0.4)",
       hoverBorderColor: "rgba(255,99,132,1)",
-      data: [4,5,3,7,8,10,2,3]
+      data: [4, 5, 3, 7, 8, 10, 2, 3],
     },
   ],
 };

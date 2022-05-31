@@ -21,7 +21,6 @@ function RoadMap({ addSession }) {
           </div>
         </div>
       </div>
-     
     </div>
   );
 }

@@ -3,14 +3,17 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import { useHistory } from "react-router-dom";
 function AsigenClassDetails() {
-  
-  const history =useHistory()
-  
+  const history = useHistory();
+
   return (
     <div>
       <div class="card">
         <div class="card-body text-left ">
-          <Button className="mb-5" variant="outlined" onClick={()=>history.push("/asigenTask")}>
+          <Button
+            className="mb-5"
+            variant="outlined"
+            onClick={() => history.push("/asigenTask")}
+          >
             {" "}
             Home
           </Button>

@@ -2,16 +2,18 @@ import React from "react";
 import Button from "@mui/material/Button";
 import { useHistory } from "react-router-dom";
 const MentorDetail = () => {
-
-const history = useHistory()
+  const history = useHistory();
 
   return (
     <div>
       <div class="card bg-transparent mentor-info">
         <div className="card-body text-left ">
-         <button className="btn btn-warning bg-transparent" onClick={()=>history.goBack()}>
+          <button
+            className="btn btn-warning bg-transparent"
+            onClick={() => history.goBack()}
+          >
             Back
-         </button>
+          </button>
           <span className="fs-1 d-flex justify-content-around text-left  text-dark">
             {" "}
             Mentor Information{" "}

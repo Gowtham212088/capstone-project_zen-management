@@ -4,26 +4,26 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import AdminDashBoard from "../Admin/AdminDashBoard";
 function AdminLogin() {
-
-const history = useHistory()
+  const history = useHistory();
 
   return (
     <div className="container-fluid admin-entire-page">
-
-<div class="card-fluid">
-  <div class="card-body">
-  <i className="fa fa-4x fa-free-code-camp text-danger" aria-hidden="true" onClick={()=>history.push("/carosel")}>
+      <div class="card-fluid">
+        <div class="card-body">
+          <i
+            className="fa fa-4x fa-free-code-camp text-danger"
+            aria-hidden="true"
+            onClick={() => history.push("/carosel")}
+          >
             {" "}
             Zen Admin{" "}
           </i>
-  </div>
-</div>
+        </div>
+      </div>
 
       <div className="row admin-page-height ">
         {/* Page 1   */}
         <div className="col-lg-7 admin-page-1">
-         
-
           {/* LOGIN BOX */}
 
           <div className="row admin-login-background">
@@ -48,7 +48,7 @@ const history = useHistory()
                 />
 
                 <Button
-                onClick={()=>history.push("/adminMainPage")}
+                  onClick={() => history.push("/adminMainPage")}
                   variant="contained"
                   style={{ height: "41px", color: "black", background: "red" }}
                 >
@@ -69,7 +69,7 @@ const history = useHistory()
                   <h2 style={{ color: "#e81700" }}> Admin SignUp </h2>{" "}
                 </div>
                 <TextField
-                style={{marginTop:"20px"}}
+                  style={{ marginTop: "20px" }}
                   id="outlined-basic"
                   label="First name"
                   variant="filled"
@@ -77,7 +77,7 @@ const history = useHistory()
                 />
 
                 <TextField
-                style={{marginTop:"20px"}}
+                  style={{ marginTop: "20px" }}
                   id="outlined-basic"
                   label="Sur-name"
                   variant="filled"
@@ -85,7 +85,7 @@ const history = useHistory()
                 />
 
                 <TextField
-                style={{marginTop:"20px"}}
+                  style={{ marginTop: "20px" }}
                   id="outlined-basic"
                   label="E-mail"
                   variant="filled"
@@ -93,17 +93,21 @@ const history = useHistory()
                 />
 
                 <TextField
-                style={{marginTop:"20px"}}
+                  style={{ marginTop: "20px" }}
                   id="outlined-basic"
                   label="Password"
                   variant="filled"
                   color="error"
                 />
 
-
                 <Button
                   variant="contained"
-                  style={{ height: "41px", color: "black", background: "red",marginTop:"20px" }}
+                  style={{
+                    height: "41px",
+                    color: "black",
+                    background: "red",
+                    marginTop: "20px",
+                  }}
                 >
                   {" "}
                   Sign Up{" "}
@@ -113,10 +117,7 @@ const history = useHistory()
           </div>
         </div>
       </div>
-
     </div>
-
-
   );
 }
 

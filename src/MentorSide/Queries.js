@@ -5,16 +5,18 @@ import SendIcon from "@mui/icons-material/Send";
 import Button from "@mui/material/Button";
 import { useHistory } from "react-router-dom";
 
-
 function QueriesMentor() {
-
-const history = useHistory()
+  const history = useHistory();
 
   return (
     <div>
       <div className="card">
         <div className="card-body bg-warning">
-          <Button className="mb-5" variant="outlined" onClick={()=>history.push("/asigenTask")}>
+          <Button
+            className="mb-5"
+            variant="outlined"
+            onClick={() => history.push("/asigenTask")}
+          >
             {" "}
             Home
           </Button>

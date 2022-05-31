@@ -13,20 +13,22 @@ function CreateMentors() {
   return (
     <div>
       <div className="border  crt-ment-bg">
-
-      <div class="card bg-transparent">
-        <div class="card-body text-left ">
-          <Button className="mb-5" variant="outlined" onClick={()=>history.push("/adminMainPage")}>
-            {" "}
-            Home
-          </Button>
-          <span className="fs-1 d-flex justify-content-around text-left asign-cd">
-            {" "}
-            Create Mentor{" "}
-          </span>
+        <div class="card bg-transparent">
+          <div class="card-body text-left ">
+            <Button
+              className="mb-5"
+              variant="outlined"
+              onClick={() => history.push("/adminMainPage")}
+            >
+              {" "}
+              Home
+            </Button>
+            <span className="fs-1 d-flex justify-content-around text-left asign-cd">
+              {" "}
+              Create Mentor{" "}
+            </span>
+          </div>
         </div>
-      </div>
-
 
         <div className="container border mt-5 frm-bx-ment ">
           <h1 className="text-center text-light"> Create Mentor </h1>

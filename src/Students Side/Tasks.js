@@ -7,7 +7,6 @@ function Tasks() {
       <div class="card alert alert-warning ">
         <h1 class="card-body py-0"> Task Submissions </h1>
       </div>
-
       <div className="row d-flex justify-content-center">
         <div class="card col-8">
           <div class="card-body d-flex justify-content-between">
