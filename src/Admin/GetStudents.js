@@ -152,14 +152,18 @@ function MainGetStudent() {
   const history = useHistory();
   const delApi = "https://6228d2bb9fd6174ca8308614.mockapi.io/students";
 
+  // Deleting student data with the help of Id.
+
   const delStudent = (id) => {
     fetch(`${delApi}/${id}`, {
       method: "DELETE",
     }).then(() => getStudents());
   };
 
-  const [student, setStudents] = useState([]);
-  const [query, setQuery] = useState("");
+  const [student, setStudents] = useState([]); // Api data state management (GET Method).
+  const [query, setQuery] = useState(""); // Search box state management hook.
+
+  // Getting all students data by using a GET method.
   const getStudents = () => {
     fetch("https://6228d2bb9fd6174ca8308614.mockapi.io/students", {
       method: "GET",
@@ -181,6 +185,9 @@ function MainGetStudent() {
           {" "}
           Zen Students List{" "}
         </i>
+
+        {/* Search box state management hook */}
+
         <TextField
           label="Search Name"
           onChange={(event) => setQuery(event.target.value)}
@@ -220,9 +227,7 @@ function MainGetStudent() {
                 <td>
                   <IconButton
                     aria-label="delete"
-                    onClick={() =>
-                      delStudent(id).then(() => window.location.reload(false))
-                    }
+                    onClick={() => delStudent(id)}
                     size="large"
                   >
                     <DeleteIcon style={{ color: "red" }} fontSize="inherit" />

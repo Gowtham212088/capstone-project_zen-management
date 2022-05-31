@@ -1,6 +1,10 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import {Link} from "react-router-dom";
 function Navbar() {
+
+ const history = useHistory()
+
   return (
     <div>
       <nav className="navbar navbar-expand-lg text-info nav_bg ">
@@ -29,7 +33,7 @@ function Navbar() {
                   aria-current="page"
                  
                 >
-                <Link to="/class">  Class </Link>
+                <Link to="/student/class"> Class </Link>
                 </a>
               </li>
 
@@ -39,17 +43,7 @@ function Navbar() {
                   aria-current="page"
                   href="#"
                 >
-                <Link to="/dashboard">  Dashboard </Link>
-                </a>
-              </li>
-
-              <li className="nav-item">
-                <a
-                  className="nav-link active fs-4 text txt-clr ms-5"
-                  aria-current="page"
-                  href="#"
-                >
-               <Link to="/tasks">  Tasks </Link>
+               <Link to="/student/tasks">  Tasks </Link>
                 </a>
               </li>
 
@@ -59,7 +53,7 @@ function Navbar() {
                   aria-current="page"
                   href="#"
                 >
-               <Link to="/roadmap">   Road Map </Link>
+               <Link to="/student/roadmap"> Road Map </Link>
                 </a>
               </li>
 
@@ -69,7 +63,7 @@ function Navbar() {
                   aria-current="page"
                   href="#"
                 >
-                <Link to="/queries">  Queries </Link>
+                <Link to="/student/queries">  Queries </Link>
                 </a>
               </li>
             </ul>
@@ -101,7 +95,7 @@ function Navbar() {
                       My profile
                     </a>
                   </li>
-                  <li>
+                  <li onClick={()=>history.push("/student/login")}>
                     <a className="dropdown-item" href="#">
                       Logout
                     </a>

@@ -106,6 +106,27 @@ function App() {
         <Route path="/student/login">
           <StudentsLogin/>
         </Route>
+
+        <Route path="/student/dashboard">
+          <DashBoard/>
+        </Route>
+
+        <Route path="/student/class">
+          <Class/>
+        </Route>
+
+        <Route path="/student/tasks">
+          <Tasks/>
+        </Route>
+
+        <Route path="/student/roadmap">
+          <RoadMap/>
+        </Route>
+         
+        <Route path="/student/queries">
+          <Queries/>
+        </Route>
+
       </Switch>
     </div>
   );

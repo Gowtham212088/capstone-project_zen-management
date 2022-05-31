@@ -1,16 +1,21 @@
 import React from "react";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
+import { useHistory } from "react-router-dom";
+import {Link} from "react-router-dom"
 function StudentsLogin() {
+
+const history = useHistory()
+
   return (
     <div className="container-fluid entire-page">
       <div className="row page-height ">
         {/* Page 1   */}
         <div className="col-lg-6 page-1">
-          <i className="fa fa-4x fa-free-code-camp" id="icon" aria-hidden="true">
+         <Link to="/carosel"> <i className="fa fa-4x fa-free-code-camp" id="icon" aria-hidden="true">
             {" "}
             Zen class{" "}
-          </i>
+          </i> </Link>
 
           {/* LOGIN BOX */}
 
@@ -34,7 +39,7 @@ function StudentsLogin() {
                   variant="filled"
                 />
 
-                <Button color="secondary" variant="contained" style={{ height: "45px" }}>
+                <Button onClick={()=>history.push("/student/dashboard")} color="secondary" variant="contained" style={{ height: "45px" }}>
                   {" "}
                   Sign In{" "}
                 </Button>

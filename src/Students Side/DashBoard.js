@@ -1,4 +1,5 @@
 import React from "react";
+import Navbar from "./Navbar";
 import { Dougnut } from "./Dashboard/Doughnut";
 import { Barchart } from "./Dashboard/Barchart";
 import {RadarChart} from "./Dashboard/RadarChart"
@@ -6,6 +7,7 @@ import {LineChart} from "./Dashboard/LineChart"
 function DashBoard() {
   return (
     <div className="container-fluid">
+      <Navbar/>
       <div className=" alert alert-primary">
         <div className="row d-flex justify-content-between flex-wrap flex-row ticket-box">
           <div className="   me-1 mx-2 py-5 mb-3    dash-activity"> 
