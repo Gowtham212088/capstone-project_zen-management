@@ -18,7 +18,7 @@ import NavMain from "../Login Pages/MainPageNav";
       <img className="carosel-height" src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"  alt="..."/>
     </div>
     <div class="carousel-item">
-      <img className="carosel-height1" src="https://images.unsplash.com/photo-1514369118554-e20d93546b30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"  alt="..."/>
+      <img className="carosel-height1" src="https://images.unsplash.com/photo-1612299273045-362a39972259?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"  alt="..."/>
     </div>
     <div class="carousel-item">
       <img className="carosel-height2" src="https://images.unsplash.com/photo-1452830978618-d6feae7d0ffa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"  alt="..."/>
@@ -120,7 +120,7 @@ import NavMain from "../Login Pages/MainPageNav";
             <div className="col-md-4">
               <div className="card shadow">
                 <img
-                  src="http://localhost:3001/static/media/Services1.915da388.jpg"
+                  src="https://images.unsplash.com/photo-1516534775068-ba3e7458af70?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
                   className="w-100 border-bottom"
                   alt="services"
                 />

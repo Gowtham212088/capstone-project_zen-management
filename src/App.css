@@ -74,7 +74,7 @@ li {
 .admin-page-1 {
   height: 950px;
   background-image: url("https://images.unsplash.com/photo-1493723843671-1d655e66ac1c?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170");
-  background-repeat:repeat ;
+  background-repeat: repeat;
   background-size: 100%;
   background-color: rgba(255, 255, 255, 0.643);
   background-attachment: scroll;
@@ -209,8 +209,8 @@ li {
   object-fit: cover;
 }
 
-.overal-div{
-  background-color:#F2F2F2;
+.overal-div {
+  background-color: #f2f2f2;
 }
 
 /** Admin Dashboard  */
@@ -373,7 +373,7 @@ a {
 
 /** mentor Details  */
 
-.mentor-info{
+.mentor-info {
   background-image: url("https://images.wallpaperscraft.com/image/single/pattern_frosty_frost_134125_3840x2160.jpg");
 }
 
@@ -516,7 +516,7 @@ a {
   background-image: url("https://images.unsplash.com/photo-1515847049296-a281d6401047?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170");
   background-size: cover;
   background-attachment: fixed;
-  height: 840px;
+  height: 940px;
 }
 
 .frm-bx {
@@ -600,61 +600,72 @@ a {
 .mentor-detail {
   display: flex;
   justify-content: center;
-  flex-direction: column;  
+  flex-direction: column;
 }
 
 /** NavMain  */
 
-.nav_bg_cent{
+.nav_bg_cent {
   background-image: url("https://images.unsplash.com/photo-1603484477859-abe6a73f9366?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
 }
 
-.carosel-txt-size{
+.carosel-txt-size {
   font-size: 15px;
 }
 
-.headings{
+.headings {
   text-decoration: crimson;
 }
 
 /* Assigen class Detail */
 
-.box1{
+.box1 {
   background-image: url("https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
 }
 
-.asign-task{
+.asign-task {
   font-weight: 700;
   color: #0d6efd;
   position: absolute;
-  left: 45% ;
+  left: 45%;
   bottom: 25px;
-
 }
 
-.asign-cd{
+.asign-cd {
   font-weight: 700;
   color: #0d6efd;
   position: absolute;
-  left: 43% ;
+  left: 43%;
   bottom: 25px;
 }
 
-.mentor-queries{
+.mentor-queries {
   position: relative;
   bottom: 35px;
 }
 
 /** Task Valuation  */
 
-.valuate-task{
+.valuate-task {
   font-weight: 700;
   color: #0d6efd;
   position: absolute;
-  left: 45% ;
+  left: 45%;
   bottom: 25px;
-  }
+}
 
-  .task-valuation{
-    background-image: url("https://images.pexels.com/photos/3707669/pexels-photo-3707669.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+.task-valuation {
+  background-image: url("https://images.pexels.com/photos/3707669/pexels-photo-3707669.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+.box-asign-task{
+  display: flex;
+  align-items: center;
+  height: 1000px;
+  background-image: url("https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;}
+
+  i:hover{
+         cursor: pointer;
   }

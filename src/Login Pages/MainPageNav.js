@@ -1,7 +1,10 @@
 import React from "react";
 import {Link} from "react-router-dom";
-
+import { useHistory } from "react-router-dom";
   function NavMain (){
+
+const history=useHistory()
+
 return(
   <div className="page container-fluid">
      
@@ -52,14 +55,13 @@ return(
               </a>
             </li>
 
-            <li className="nav-item">
+            <li className="nav-item" onClick={()=>history.pushState}>
               <a
                 className="nav-link active fs-4 text txt-clr ms-5"
                 aria-current="page"
                 href="#"
               >
-                <Link to="/studentLogin"> <i class="fa fa-book text-dark" aria-hidden="true">  Students Login </i>
- </Link>
+               <Link to="/student/login">  <i class="fa fa-book text-dark text-primary" aria-hidden="true">  Students Login </i>  </Link>
               </a>
             </li>
           </ul>

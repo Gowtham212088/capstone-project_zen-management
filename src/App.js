@@ -12,7 +12,6 @@ import Tasks from "./Students Side/Tasks";
 import Queries from "./Students Side/Queries";
 import { Switch, Route } from "react-router-dom";
 import StudentsMain from "./MentorSide/Students";
-import Mentor from "./MentorSide/Mentor";
 import MentorDetail from "./MentorSide/MentorDetail";
 import AsigenTask from "./MentorSide/AsigenTask";
 import AdminMainPage from "./Admin/AdminMainPage";
@@ -31,89 +30,83 @@ import TaskValuation from "./MentorSide/TaskValuation";
 function App() {
   return (
     <div className="App">
+      <Switch>
+        <Route exact path="/">
+          <Carosel />
+        </Route>
 
+        <Route path="/carosel">
+          <Carosel />
+        </Route>
 
-<Switch>
+        <Route path="/adminLogin">
+          <AdminLogin />
+        </Route>
 
-<Route exact path="/">
-<Carosel/>
-</Route>
+        {/*  Complete admin Login */}
 
-<Route path="/carosel">
-<Carosel/>
-</Route>
+        {/* Contains navbar and Dashboard defaultly */}
+        <Route path="/adminMainPage">
+          <AdminMainPage />
+        </Route>
 
-<Route  path="/adminLogin">
-<AdminLogin/>
-</Route>
+        <Route path="/addMentor">
+          <CreateMentors />
+        </Route>
 
-{/*  Complete admin Login */}
+        <Route path="/addStudent">
+          <CreateStudent />
+        </Route>
 
-{/* Contains navbar and Dashboard defaultly */}
-<Route path="/adminMainPage">
-  <AdminMainPage/>
-</Route>
+        <Route path="/getMentor">
+          <GetMentorMain />
+        </Route>
 
+        <Route path="/getStudents">
+          <MainGetStudent />
+        </Route>
 
-<Route path="/addMentor">
-  <CreateMentors/>
-</Route>
+        <Route path="/Student/edit/:id">
+          <EditStudents />
+        </Route>
 
-<Route path="/addStudent">
-  <CreateStudent/>
-</Route>
+        {/* Complete Mentor login  */}
 
-<Route path="/getMentor">
-  <GetMentorMain/>
-</Route>
+        <Route path="/mentorLogin">
+          <MentorLogin />
+        </Route>
 
-<Route path="/getStudents">
-  <MainGetStudent/>
-</Route>
+        <Route path="/asigenTask">
+          <MentorNavbar />
+          <AsigenTask />
+        </Route>
 
-<Route path="/Student/edit/:id">
-  <EditStudents/>
-</Route>
+        <Route path="/asignClassDetails">
+          <AsigenClassDetails />
+        </Route>
 
-{/* Complete Mentor login  */}
+        <Route path="/studentsMain">
+          <StudentsMain />
+        </Route>
 
-<Route path="/mentorLogin">
-<MentorLogin/>
-</Route>
+        <Route path="/studentsDetail">
+          <MentorDetail />
+        </Route>
 
-<Route path="/asigenTask">
-  <MentorNavbar/>
-  <AsigenTask/>
-</Route>
+        <Route path="/taskValuation">
+          <TaskValuation />
+        </Route>
 
-<Route path="/asignClassDetails">
-  <AsigenClassDetails/>
-</Route>
+        <Route path="/MentorQueries">
+          <QueriesMentor />
+        </Route>
 
-<Route path="/studentsMain">
-<StudentsMain/>
-</Route>
+{/* Complete Students Login */}
 
-<Route path="/studentsDetail">
-<MentorDetail/>
-</Route>
-
-<Route path="/taskValuation">
-<TaskValuation/>
-</Route>
-
-<Route path="/MentorQueries">
-<QueriesMentor/>
-</Route>
-
-<Route >
-<StudentsLogin/>
-</Route>
-
-
-
-</Switch>
-
+        <Route path="/student/login">
+          <StudentsLogin/>
+        </Route>
+      </Switch>
     </div>
   );
 }

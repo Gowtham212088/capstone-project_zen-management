@@ -9,6 +9,16 @@ const history = useHistory()
 
   return (
     <div className="container-fluid admin-entire-page">
+
+<div class="card-fluid">
+  <div class="card-body">
+  <i className="fa fa-4x fa-free-code-camp text-danger" aria-hidden="true" onClick={()=>history.push("/carosel")}>
+            {" "}
+            Zen Admin{" "}
+          </i>
+  </div>
+</div>
+
       <div className="row admin-page-height ">
         {/* Page 1   */}
         <div className="col-lg-7 admin-page-1">

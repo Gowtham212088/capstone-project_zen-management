@@ -5,6 +5,7 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import { useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import TextField from "@mui/material/TextField";
+import { Button } from "@mui/material";
 function MainGetStudent() {
   // const students = [
   //   {
@@ -154,7 +155,7 @@ function MainGetStudent() {
   const delStudent = (id) => {
     fetch(`${delApi}/${id}`, {
       method: "DELETE",
-    }).then(() => history.push("/getStudents"));
+    }).then(() => getStudents());
   };
 
   const [student, setStudents] = useState([]);
@@ -172,10 +173,10 @@ function MainGetStudent() {
   return (
     <div>
       <div class="card-body d-flex justify-content-between">
-        <h1 class="card-title text-left text-dark"> Students List</h1>
         <i
           className="fa fa-4x fa-free-code-camp text-danger"
           aria-hidden="true"
+          onClick={() => history.push("/adminMainPage")}
         >
           {" "}
           Zen Students List{" "}
@@ -213,14 +214,10 @@ function MainGetStudent() {
                     size="large"
                   >
                     {" "}
-                    <EditIcon
-                      style={{ color: "#0d6efd" }}
-                      fontSize="inherit"
-                    />
+                    <EditIcon style={{ color: "#0d6efd" }} fontSize="inherit" />
                   </IconButton>
                 </td>
                 <td>
-                 
                   <IconButton
                     aria-label="delete"
                     onClick={() =>

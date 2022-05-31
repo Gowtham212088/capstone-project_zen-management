@@ -7,7 +7,7 @@ import {mentors} from "./MentorAPI"
 import {useHistory} from "react-router-dom"
    function GetMentorMain(){
 
-
+const history = useHistory()
 const [mentor,setMentors]=useState([])
 
 const getMentors = (()=>{
@@ -22,11 +22,19 @@ useEffect(() => getMentors(), [])
        return(
         <div className="container-fluid alert mentor-main">
         <div className="row d-flex justify-content-center">
-        <div class="card border-3 mentor-list mb-5">
-    
-      <div class="card-body">
-        <h1 class="card-title text-center text-light"> Mentors List</h1>
-       </div>
+        <div class="card mentor-list mb-5">
+        <div class="card bg-transparent">
+        <div class="card-body text-left ">
+          <Button className="mb-5 bg-danger text-dark"  variant="outlined" onClick={()=>history.push("/adminMainPage")}>
+            {" "}
+            Home
+          </Button>
+          <span className="fs-1 d-flex justify-content-around text-left asign-cd">
+            {" "}
+            Asign Mentors{" "}
+          </span>
+        </div>
+      </div>
     </div>
           {mentor.map(({mentor_id,profile_pic,name,email}) => (
             <GetMentor
@@ -59,6 +67,7 @@ function GetMentor({mentor_id,name,profile_pic,email}){
 <h2 className="text-secondary text-light"> {name} </h2>
 
 <h4 className="text-secondary text-light"> {email} </h4>
+<Button color="error"> Add Students </Button>
 </div>
          {/* <Button> <span className="text-danger"> Asigen Student </span> </Button> */}
   </div>

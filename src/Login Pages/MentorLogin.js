@@ -9,7 +9,7 @@ return(
     <div className="row mentor-page-height ">
       {/* Page 1   */}
       <div className="col-lg-6 mentor-page-1">
-        <i class="fa fa-4x fa-free-code-camp" id="icon" aria-hidden="true">
+        <i class="fa fa-4x fa-free-code-camp" id="icon" aria-hidden="true" onClick={()=>history.push("/carosel")}>
           {" "}
           Zen class{" "}
         </i>
