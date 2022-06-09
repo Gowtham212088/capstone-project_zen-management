@@ -16,7 +16,7 @@ function NavMain() {
                 aria-hidden="true"
               >
                 {" "}
-                CENTERALISED LOGIN{" "}
+                CENTERAL LOGIN{" "}
               </i>{" "}
             </Link>
             <button

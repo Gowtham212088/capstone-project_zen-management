@@ -5,7 +5,8 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import { useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import TextField from "@mui/material/TextField";
-import { Button } from "@mui/material";
+
+
 function MainGetStudent() {
   // const students = [
   //   {
@@ -152,7 +153,7 @@ function MainGetStudent() {
   const history = useHistory();
   const delApi = "https://6228d2bb9fd6174ca8308614.mockapi.io/students";
 
-  // Deleting student data with the help of Id.
+  //* Deleting student data with the help of Id.
 
   const delStudent = (id) => {
     fetch(`${delApi}/${id}`, {
@@ -163,7 +164,7 @@ function MainGetStudent() {
   const [student, setStudents] = useState([]); // Api data state management (GET Method).
   const [query, setQuery] = useState(""); // Search box state management hook.
 
-  // Getting all students data by using a GET method.
+  //* Getting all students data by using a GET method.
   const getStudents = () => {
     fetch("https://6228d2bb9fd6174ca8308614.mockapi.io/students", {
       method: "GET",

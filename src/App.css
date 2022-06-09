@@ -107,7 +107,7 @@ li {
 }
 
 .admin-login-background {
-  background-color: rgba(240, 248, 255, 0.326);
+  background-color: rgba(240, 248, 255, 0.308);
 }
 
 .admin-login-icon {
@@ -192,21 +192,21 @@ li {
 /** Carosel items */
 
 .carosel-height {
-  height: 750px;
+  height: 950px;
   width: 100%;
   object-fit: cover;
 }
 
 .carosel-height1 {
-  height: 750px;
+  height: 950px;
   width: 100%;
   object-fit: cover;
 }
 
 .carosel-height2 {
-  height: 750px;
+  height: 950px;
   width: 100%;
-  object-fit: cover;
+  object-fit:  cover;
 }
 
 .overal-div {
@@ -669,4 +669,12 @@ a {
 
 i:hover {
   cursor: pointer;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
 }

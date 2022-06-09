@@ -101,32 +101,31 @@ function App() {
           <QueriesMentor />
         </Route>
 
-{/* Complete Students Login */}
+        {/* Complete Students Login */}
 
         <Route path="/student/login">
-          <StudentsLogin/>
+          <StudentsLogin />
         </Route>
 
         <Route path="/student/dashboard">
-          <DashBoard/>
+          <DashBoard />
         </Route>
 
         <Route path="/student/class">
-          <Class/>
+          <Class />
         </Route>
 
         <Route path="/student/tasks">
-          <Tasks/>
+          <Tasks />
         </Route>
 
         <Route path="/student/roadmap">
-          <RoadMap/>
-        </Route>
-         
-        <Route path="/student/queries">
-          <Queries/>
+          <RoadMap />
         </Route>
 
+        <Route path="/student/queries">
+          <Queries />
+        </Route>
       </Switch>
     </div>
   );

@@ -9,9 +9,11 @@ function EditStudents() {
 
   const history = useHistory();
 
-  const [data, setData] = useState(null);
+ //! State management for getting data from api  
 
-  console.log(id);
+  const [data, setData] = useState(null); 
+
+  // console.log(id);
 
   useEffect(() => {
     fetch(`https://6228d2bb9fd6174ca8308614.mockapi.io/students/${id}`)
@@ -22,13 +24,15 @@ function EditStudents() {
       });
   }, [id]);
 
-  useEffect(() => {
-    console.log("test");
-  }, []);
+  // useEffect(() => {
+  //   console.log("test");
+  // }, []);
 
   const handleChange = (e) => {
     setData({ ...data, [e.target.name]: e.target.value });
   };
+
+  //! Editing students details using PUT method
 
   const handleSubmit = () => {
     fetch(`https://6228d2bb9fd6174ca8308614.mockapi.io/students/${id}`, {
